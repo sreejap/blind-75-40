@@ -1,3 +1,6 @@
+# Intuition (bank account / credits)
+# Think of each push depositing a “coin” to pay for its future move. When the while-loop runs, it spends the coins attached to the elements being moved. 
+# Since each element has enough coins and is moved once, you never go into debt—so average cost stays constant.
 # T(C) -  the expensive while self.in_stack: work doesn’t happen every time—it happens only when out_stack is empty, 
 # and each element can be moved from in_stack to out_stack only once per push. Over a long sequence of operations, the total work “spreads out,” giving amortized 
 # O (1), O(1) per operation.
