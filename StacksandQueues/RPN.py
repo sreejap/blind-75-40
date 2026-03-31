@@ -2,7 +2,7 @@ class Solution:
     def evalRPN(self, tokens: List[str]) -> int:
         
         stack = []
-        operands = {"+", "-", "*", "/"}
+        operands = {"+", "-", "*", "/"} # creates a set
         for t in tokens:
             if t not in operands:
                 stack.append(int(t))           # important to convert here 
