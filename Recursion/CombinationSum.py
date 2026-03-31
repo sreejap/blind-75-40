@@ -1,3 +1,6 @@
+# T(C) - O(N ^(T/M)+1)
+# S(C)​ - O(N ^(T/M))
+
 class Solution:
     def combinationSum(self, candidates: List[int], target: int) -> List[List[int]]:
         results = []
