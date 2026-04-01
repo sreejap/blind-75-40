@@ -7,7 +7,7 @@ from collections import defaultdict
 class Solution:
     def __init__(self):
         self.visited = set()
-        self.adjacent = defaultdict(list)
+        self.adjacent = defaultdict(list) # this returns and empty list when key doesn't exists
 
     def dfs(self, merged_account, email):
         self.visited.add(email)
