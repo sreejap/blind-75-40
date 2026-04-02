@@ -1,6 +1,8 @@
 from collections import deque
 class Solution:
     def canFinish(self, numCourses: int, prerequisites: List[List[int]]) -> bool:
+        # make the adj list for courses, have an array for indegree, add all indegree 0 courses to queue and do bfs
+        
         if 0 <= numCourses <= 1:
             return True
 
