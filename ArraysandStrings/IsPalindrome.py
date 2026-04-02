@@ -4,7 +4,7 @@ class Solution:
         right = len(s) - 1
 
         while left < right:
-            while left < right and not s[left].isalnum():
+            while left < right and not s[left].isalnum(): # pattern to remember - this internal while loop to find the candidates correctly
                 left += 1
             while left < right and not s[right].isalnum():
                 right -= 1
