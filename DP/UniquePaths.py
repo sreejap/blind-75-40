@@ -1,4 +1,6 @@
 # https://leetcode.com/problems/unique-paths/
+# T(C) - o(mxn)
+# S(C) - o(mxn)
 class Solution:    
     def uniquePaths(self, m: int, n: int) -> int:
         paths = [[1]*n for _ in range(m)]
