@@ -4,6 +4,7 @@
 #         self.val = val
 #         self.left = left
 #         self.right = right
+# see the follow up in the editorial - https://leetcode.com/problems/kth-smallest-element-in-a-bst/editorial/
 class Solution:
     def kthSmallest(self, root: Optional[TreeNode], k: int) -> int:
         stack = []
